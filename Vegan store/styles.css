@@ -1,0 +1,571 @@
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+#head-section{
+    background-image: url("https://edyoda.s3.ap-south-1.amazonaws.com/public/landing-background.png");
+    background-size: cover;
+    background-position: left center;
+}
+#top-bar{
+    background-color: white;
+    width: 100%;
+    height: 77px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 28px;
+    box-sizing: border-box;
+    position: fixed;
+    align-items: center;
+}
+#ref-pos{
+    position: relative;
+}
+#ref-pos p{
+    margin: 0;
+}
+#dropdown{
+    display: block;
+    width: 150px;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    box-shadow: rgb(204, 204, 204) 0px 2px 5px;
+    display: none;
+    border-top: 2px solid rgb(170, 210, 54);
+    padding: 20px;
+    z-index: 3;
+}
+#ref-pos:hover #dropdown{
+    display: block;
+    
+}
+#dropdown a{
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
+    border-bottom: 1px solid rgb(204, 204, 204);
+    padding: 4px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+#tree-logo{
+    width: 40px;
+}
+.menu-item p,.menu-item{
+    display: inline-block;
+}
+.menu-item{
+    font-weight: 600;
+    font-size: 14px;
+    margin-right: 24px;
+    cursor: pointer;
+}
+.menu-item i{
+    margin-left: 4px;
+}
+#button{
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(170,210,54);
+    padding: 9px 34px;
+    border-radius: 4px;
+    margin-right: 16px;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+}
+#main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+#main h1{
+    width: 100%;
+    max-width: 1100px;
+    font-size: 44px;
+    font-weight: 600;
+    letter-spacing: 8.8px;
+    line-height: 1.2;
+    text-align: center;
+    margin: 0px;
+}
+#main p{
+    text-align: center;
+    width: 100%;
+    max-width: 1100px;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    color: rgb(139, 139, 153);
+    padding-top: 32px;
+}
+#cards-section{
+    display: flex;  
+    flex-direction: row;
+    width: 100%;  
+}
+
+.card-item i{
+    font-size: 96px;
+    transition: all 0.3s;
+}
+.card-item:hover i{
+    transform: scale(1.1,1.1);
+}
+.card-item{
+    padding: 112px 48px;
+    color: white;
+    width: 25%;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 112px 48px;
+}
+.card-item h3{
+    font-weight: 600;
+    font-size: 24px;
+}
+.card-item p{
+    margin-top: 0;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+    font-weight: 400;
+}
+#card-1{
+    background-color: #5acda6;
+}
+#card-2{
+    background-color: #91ac41;
+}
+#card-3{
+    background-color: #e4b476;
+}
+#card-4{
+    background-color: #f69dad;
+}
+#about-veganstore{
+    width: 100%;
+    box-sizing: border-box;
+    background-color:rgb(247, 238, 226);
+    text-align: center;
+    padding: 75px 0;
+}
+#cursive{
+    font-family:  'Caveat', cursive;
+    font-size: 24px;
+    font-weight: 400;
+    color: rgb(145, 172, 65);
+    margin: 35px 0 0;
+}
+#heading > h3{
+    font-size: 44px;
+    font-weight: 600;
+    margin: 0 0 8px;
+    
+}
+#heading h3+p{
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(139,139,153);
+    letter-spacing: 0.5px;
+    margin: 0 0 55px;
+} 
+#grid{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1140px;
+    justify-content: stretch;
+    margin: 0 auto;
+}
+.grid-item{
+    width: 25%;
+    text-align: center;
+    padding: 24px;
+    box-sizing: border-box;
+}
+.grid-item > h3{
+    font-size: 24px;
+    font-weight: 600;
+    
+}
+.grid-item p{
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    color: rgb(139, 139, 153); 
+}
+.icon-wrapper > i{
+    font-size: 60px;
+}
+.icon-wrapper{
+    display: inline-block;
+    background-color: rgb(227, 179, 117);
+    color: white;
+    border-radius: 50%;
+    padding: 40px;
+    transition: all 0.3s ease 0s;
+}
+.grid-item:hover .icon-wrapper{
+    transform: scale(1.1, 1.1);
+}
+#testimonials-section{
+    
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    padding: 75px 0;
+}
+#t-cursive{
+    font-family:  'Caveat', cursive;
+    font-size: 24px;
+    font-weight: 400;
+    color: rgb(145, 172, 65);
+    margin: 35px 0 0;
+}
+#t-heading > h3{
+    font-size: 44px;
+    font-weight: 600;
+    margin: 0 0 8px;
+    
+}
+#t-heading h3+p{
+    max-width: 700px;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(139,139,153);
+    letter-spacing: 0.5px;
+    margin: 0 auto 55px;
+}
+#testimonial-grid{
+    width: 100%;
+    max-width: 1140px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+.t-griditem{
+    width: 25%;
+    text-align: center;
+    background-color: rgb(245, 246, 251);
+    border-top-left-radius: 45px;
+    border-bottom-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+    padding: 40px 30px;
+    margin: 16px;
+    transition: box-shadow 0.3s ease 0s;
+    
+}
+.t-griditem:hover{
+    box-shadow: rgba(39, 39, 47, 0.06) 0px 12px 16px 0px;
+}
+.t-griditem > img{
+    width: 80px;
+    margin-bottom: 25px;
+    border-radius: 50%;
+}
+.t-griditem >img+p{
+    font-size: 14px;
+    color: rgb(139, 139, 153);
+    letter-spacing: 0.5px;
+    font-style: italic;
+    margin: 0px;
+    
+}
+.t-griditem > img + p + p{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 24px;
+    margin-bottom: 0px;
+}
+.t-griditem > img + p + p +p{
+    color: rgb(139, 139, 153);
+    font-size: 12px;
+    font-style: italic;
+    letter-spacing: 0.5px;
+    margin: 0px;
+}
+#follow-us{
+    display: flex;
+    justify-content: stretch;
+}
+#left-section{
+    width: 67%;
+    display: inline-block;
+    margin: 0px;
+}
+#left-section img{
+    width: 100%;
+}
+#follow-desc{
+    width: 33.33%;
+    display: inline-block;
+    background-image: url(https://edyoda.s3.ap-south-1.amazonaws.com/public/strawberry-white.png);
+    background-size: cover;
+    margin: 0;
+    background-position: left center;
+}
+#text-wrapper > h3{
+    font-size: 44px;
+    font-weight: 600;
+    margin: 0px 0px 8px;
+}
+#text-wrapper > h3 +p{
+    color: rgb(139, 139, 153);
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0px;
+}
+#text-wrapper #email{
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+    color: rgb(139, 139, 153);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 60px;
+    display: block;
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial; 
+    border-radius: 4px;
+    padding: 12px;
+}
+#sub-btn{
+    background-color: rgb(246, 157, 173);
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 16px;
+    padding: 16px 42px;
+    border-radius: 4px;
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+    font-family: 'Poppins', sans-serif;
+}
+#sub-btn:hover{
+    color: rgb(246, 157, 173);
+    background-color: transparent;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(246, 157, 173);
+    border-image: initial;
+}
+#text-wrapper{
+    margin: 115px;
+}
+#stats-section {
+    width: 100%;
+    background-color: rgb(246, 252, 250);
+}
+#stats-wrapper{
+    width: 100%;
+    max-width: 1140px;
+    text-align: center;
+    display: flex;
+    justify-content: stretch;
+    padding: 100px 0px;
+    margin: 0px auto;
+}
+.stats-item {
+    width: 25%;
+    padding: 0px 64px;
+}
+.stats-item h3{
+    font-size: 44px;
+    font-weight: 600;
+    margin: 0px;
+}
+.stats-item p {
+    color: rgb(87, 227, 181);
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    margin: 0px;
+}
+#video{
+    text-align: center;
+}
+#video iframe{
+    width: 100%;
+    height: 425px;
+}
+#video > h3{
+    color: rgb(139, 139, 153);
+    font-size: 44px;
+    font-weight: 400;
+}
+#video #line-sepator{
+    width: 96px;
+    display: inline-block;
+    height: 1px;
+    background-color: rgb(228, 180, 118);
+    margin-bottom: 36px;
+}
+#address-wrapper{
+    width: 100%;
+    max-width: 1140px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px auto;
+    padding: 100px 0px;
+}
+#address-section{
+    width: 50%;
+}
+.style-heading{
+    color: rgb(145, 172, 65);
+    font-size: 24px;
+    font-family: Caveat, cursive;
+    margin: 35px 0px 0px;
+}
+#address-section > h3+p,#get-in-touch > h3+p{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(139, 139, 153);
+    letter-spacing: 0.5px;
+}
+
+
+
+#address-section > h3,#get-in-touch > h3{
+    font-size: 44px;
+    margin: 0px;
+}
+#address-section > .location{
+    font-size: 24px;
+    font-weight: 600;
+    margin: 32px 0px 0px;
+}
+#address-section > .address-line{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(139, 139, 153);
+    letter-spacing: 0.5px;
+    line-height: 2;
+    margin: 0px;
+}
+#get-in-touch{
+    width: 40%;
+}
+.input-field{
+    width: 100%;
+    font-size: 16px;
+    color: rgb(139, 139, 153);
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    padding: 16px;
+    border-radius: 6px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(229, 230, 236);
+    border-image: initial;
+}
+.input-field{
+    font-family: Poppins, sans-serif;
+}
+#last-submit{
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(170, 210, 54);
+    text-transform: uppercase;
+    margin-right: 16px;
+    cursor: pointer;
+    padding: 9px 34px;
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+    border-radius: 4px;
+    font-family: Poppins, sans-serif;
+}
+footer{
+    background-color: #232323;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    padding: 30px 0;
+}
+@media(max-width: 900px){
+    .menu-item{
+        display: none;
+    }
+    #button{
+        margin-right: 0;
+    }  
+    #main > h1{
+        font-size: 28px;
+    }
+    #cards-section{
+        flex-direction: column;
+    }
+    .card-item{
+        width: 100%;
+    }
+    #grid{
+        flex-direction: column;
+    }
+    .grid-item{
+        width: 100%;
+    }
+    #t-heading > h3{
+        font-size: 28px;
+    }
+    #testimonial-grid{
+        flex-direction: column;
+    }
+    .t-griditem{
+        width: 100%;
+    }
+    #follow-us{
+        flex-direction: column;
+    }
+    #left-section{
+        width: 100%;
+    }
+    #follow-desc{
+        width: 100%;
+    }
+    #text-wrapper > h3{
+        font-size: 28px;
+    }
+    #text-wrapper{
+        margin: 16px;
+    }
+    #stats-wrapper{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .stats-item {
+        width: 100%;
+    }
+    #address-wrapper{
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 0 16px 16px;
+    }
+    #address-section{
+        width: 100%;
+    }
+    #get-in-touch{
+        width: 100%;
+    }
+}
